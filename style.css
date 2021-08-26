@@ -15,7 +15,7 @@ body {
 }
 
 img{
-  width:100px;
+  width:110px;
   border-radius: 50%;
 }
 
@@ -41,11 +41,12 @@ a:hover{
 
 .btn-pink {
   width: 120px;
-  padding: 20px 25px;
+  padding: 10px 25px;
   background-color: #F5C6AA;
   border-radius: 8px;
   font-family: 'Lobster', cursive;
   font-size: 28px;
+  box-shadow: 5px 10px 18px #c1a394;
 }
 
 p{
@@ -60,6 +61,7 @@ p{
   margin: 30px auto;
   padding: 35px;
   border-radius: 8px;
+  box-shadow: 5px 10px 18px #e1a4a4;
 }
 
 ul{
@@ -71,6 +73,7 @@ li{
   justify-content: center;
   font-size: 40px;
   padding: 0 10px;
+
 }
 
 .social-media {
