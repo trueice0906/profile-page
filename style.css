@@ -39,6 +39,10 @@ a:hover{
   color:rgb(96, 47, 72);
 }
 
+.btn-wrapper{
+  margin: 20px 20px;
+}
+
 .btn-pink {
   width: 120px;
   padding: 10px 25px;
@@ -51,7 +55,7 @@ a:hover{
 
 p{
   font-family: 'Open Sans', sans-serif;
-  margin-bottom: 35px;
+  margin: 35px;
 }
 
 .one,.two{
