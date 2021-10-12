@@ -1,113 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Raleway:wght@100;400&display=swap');
+/* profile page */
 
-.container{
-  margin: auto;
-  padding:10px;
-}
-
-body {
-  background-color: #FCD8D4;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  overflow:hidden;
-  overflow-y: scroll;
-}
-
-img{
-  width:110px;
-  border-radius: 50%;
+body{
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 h1{
-  color: #F5C6AA;
-  font-family: 'Lobster', cursive;
+  font-size: 2.5rem;
+  font-family: 'Courgette', cursive;
 }
 
-h2{
-  color: #F5C6AA;
-  font-family: 'Lobster', cursive;
+h2,a{
+  font-weight: 150;
 }
 
 a{
-  color: rgb(255, 255, 255);
-  font-family: 'Open Sans', sans-serif;
-  text-decoration: none;
+  font-size: 1.5rem;
 }
 
-a:hover{
-  color:rgb(96, 47, 72);
+nav{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  z-index: 3;
+  position: fixed;
+  width: 100%;
 }
 
-.btn-wrapper{
-  margin: 20px 20px;
+.logo{
+  margin: 1rem;
 }
 
-.btn-pink {
-  width: 120px;
-  padding: 10px 25px;
-  background-color: #F5C6AA;
-  border-radius: 8px;
-  font-family: 'Lobster', cursive;
-  font-size: 28px;
-  box-shadow: 5px 10px 18px #c1a394;
+.logo > img{
+  width: 60px;
 }
 
-p{
-  font-family: 'Open Sans', sans-serif;
-  margin: 35px;
-}
-
-.one,.two{
-  background-color: #FDF6F0;
+.nav-selection{
   width: 60%;
-  text-align: center;
-  margin: 30px auto;
-  padding: 35px;
-  border-radius: 8px;
-  box-shadow: 5px 10px 18px #e1a4a4;
+  font-size: 20px;
 }
 
-ul{
-  padding: 0;
-}
-
-li{
+.nav-item{
   display: inline;
+  padding: 1rem 2rem;
+  margin : 0 1rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position:relative;
+}
+
+.nav-item a::after{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: hotpink;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.nav-item a:hover::after,
+.nav-item a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.1em, 0);
+}
+
+#home{
+  height: 100vh;
+  background: linear-gradient(rgba(149, 93, 208, 0.45),rgba(60, 119, 142, 0.45)),url('/images/background.jpeg');
+  background-position: center;
+  background-size: cover;
+  display : flex;
+  align-items: center;
+}
+
+.profile_description{
+  text-align:center;
+  color: #fff;
   justify-content: center;
-  font-size: 40px;
-  padding: 0 10px;
-
+  width: 60%;
+  margin: 0 auto;
 }
 
-.social-media {
-  color:#F5C6AA;
+.top {
+  opacity: 1;
 }
 
-/* ==============width 960 ======================== */
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-
-  body{
-    font-size: 16px;
-  }
+.profile_description h2{
+  font-size: 2rem;
+  margin-bottom: 4rem;
 }
 
-
-/* ==============width 720 ======================== */
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-
-  body{
-    font-size: 14px;
-  }
+.view-btn{
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border: 1px solid white;
 }
 
-/* ==============width 540 ======================== */
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
+.view-btn:hover{
+  background:hotpink;
+}
 
-  body{
-    font-size: 12px;
-  }
+#portfolio{
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.project_intro {
+  width: 60%;
+  margin: 4rem auto;
+}
+
+.shadow-header{
+  background-color: rgb(255, 254, 254);
+  box-shadow:0 4px 2px -2px rgba(100, 100, 111, 0.2);
+}
+
+.shadow-header ul li a{
+  color: rgb(103, 102, 102);
+}
+
+.h-line{
+  margin: 3rem 0;
+}
+
+.one{
+  padding-bottom: 5rem;
+  border-bottom :1px solid rgb(207, 204, 204);
+}
+
+.project {
+  display: block;
+  opacity:1;
+  transition: opacity 2s ease;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#about {
+  height: 100vh;
+  object-fit: contain;
+  background: linear-gradient(rgba(176, 23, 59, 0.8),rgba(190, 35, 21, 0.8)),url('/images/collage.png'),center center no-repeat;
+  display : flex;
+  align-items: center;
+}
+
+footer{
+  height:250px;
+  background: rgb(30, 30, 30);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.social-icon{
+  display: inline;
+  margin: 1rem 3rem;
+}
+
+.social{
+  color: white;
+  font-size: 2.5rem;
+}
+
+.social-icon a:hover i{
+  cursor: pointer;
+  color:hotpink;
 }

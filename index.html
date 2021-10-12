@@ -5,47 +5,86 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yen's profile</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script src="https://kit.fontawesome.com/9ba5256374.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-<div class="container">
-  <div class="one">
-    <h1>Hello, I'm YEN</h1>
-    <img src="310FB384-8139-4FA3-8E32-43DDBEF73483_4_5005_c.jpeg" alt="profile-pic">
-
-    <h2>Flight attendant</h2>
-
-    <p>I love flying.Flying is my job .But I found a new interest,which is coding.I hope I can find a job as a full-stack developer after graduating from this bootcamp. </p>
-
-    <div class="btn-wrapper">
-      <a class="btn-pink" href="https://www.facebook.com/yenyen.choo" target="_blank">Discover YEN</a>
+  <nav>
+    <div class="logo">
+      <!-- <img src="/images/logo.png" alt="logo"> -->
     </div>
-  </div>
 
-  <div class="two">
-    <h2>Follow me</h2>
-    <ul>
-      <li>
-        <a class="social-media" href="https://www.facebook.com/yenyen.choo" target="_blank">
-          <i class="fab fa-facebook-square"></i>
-        </a>
-      </li>
-      <li>
-        <a class="social-media" href="https://www.linkedin.com/in/yen-yen-choo-9572571ab/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-      <li>
-        <a class="social-media" href="https://github.com/trueice0906" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
+    <ul class="nav-selection">
+      <li class="nav-item"><a href="#portfolio">projects </a></li>
+      <li class="nav-item"><a href="#about">about me </a></li>
     </ul>
-  </div>
 
-</div>
+  </nav>
+
+  <section id="home" >
+
+    <div class="profile_description top ">
+      <h1>CHOO YEN YEN</h1>
+      <h2>I’m a team oriented junior full-stack developer focused on crafting efficient application suited to user's need. </h2>
+
+      <a class="view-btn" href="#portfolio">View projects</a>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="project one hidden ">
+      <div class="project_intro">
+        <h1>SurpriseMe </h1>
+        <h2>An Birthday Reminder and Gift Recommendation App that return gift suggestions based on preferences the users fills out.Making gift giving easier.</h2>
+      </div>
+
+        <img src="/images/surpriseme.png" alt="surprise-me" style="width: 1000px;">
+    </div>
+
+
+    <div class="project hidden">
+      <div class="project_intro">
+        <h1>Gambly </h1>
+        <h2>Online booking apps for fun activities and experiences.Integrated stripe API to allow user make payment in test mode. </h2>
+      </div>
+
+      <img src="/images/gambly.png" alt="surprise-me" style="width: 1000px;">
+    </div>
+
+  </section>
+
+  <section id="about">
+    <div class="profile_description">
+      <h1>ABOUT ME</h1>
+      <h2>I am from Penang,Malaysia.</h2>
+      <h2>I am a flight attendant.</h2>
+      <h2>I love flying.</h2>
+      <h2>But I love coding more.</h2>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy;2021 CHOO YEN YEN . Made in Malaysia
+
+    </p>
+
+  <ul>
+    <li class="social-icon"><a href=""><i class="fab fa-instagram social"></i></a></li>
+    <li class="social-icon"><a href=""><i class="fab fa-facebook-f social"></i></a></li>
+    <li class="social-icon"><a href=""><i class="fab fa-github-alt social"></a></i></li>
+  </ul>
+
+    <p>This site was built with simple tools like HTML,CSS and vanilla Javascript. Font used in headlines is Courgette
+    , font in body copy is Raleway.</p>
+  </footer>
+
+
+
+
 
 </body>
+
+<script src= "script.js"></script>
 </html>
